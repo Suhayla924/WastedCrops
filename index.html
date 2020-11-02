@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello, WebVR! • A-Frame</title>
+    <meta name="description" content="Hello, WebVR! • A-Frame" />
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-assets>
+      <a-asset-item
+        id="tractor"
+        src="https://suhayla924.github.io/WastedCrops/"
+      ></a-asset-item>
+      <a-asset-item
+        id="tower"
+        src="https://cdn.glitch.com/ef098137-9649-4df6-9d35-b5ecdc26a827%2Ftrashcan.gltf?v=1604203281033"
+      ></a-asset-item>
+      <a-asset-item
+        id="soil"
+        src="https://cdn.glitch.com/ef098137-9649-4df6-9d35-b5ecdc26a827%2FPROJECT-2-soil.gltf?v=1604280505038"
+      ></a-asset-item>
+      <a-asset-item
+        id="plant"
+        src="https://cdn.glitch.com/ef098137-9649-4df6-9d35-b5ecdc26a827%2FPROJECT-2-plant.gltf?v=1604285961346"
+      ></a-asset-item>
+    </a-assets>
+    <a-scene background="color: #FAFAFA">
+      <a-sky color="#B7EBF0"></a-sky>
+      <a-entity
+        gltf-model="#tractor"
+        shadow=""
+        position="93 -0.28 90"
+        rotation="0 -86.07888730927435 0"
+        scale="0.76459 0.76459 0.76459;"
+        animation="property: position; to: -93 -0.28 90; dur: 10000; easing: linear; loop: true"
+      ></a-entity>
+      <a-entity
+        light="intensity: 0.6; castShadow: true"
+        position="-0.5 -40.03444 1"
+        data-aframe-default-light=""
+        aframe-injected=""
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow
+        position="-5 2.25 -123.48"
+        rotation="0 0 0"
+        scale=".5 .5 .5"
+      ></a-entity>
+      <a-plane
+        position="0 0.5 -4"
+        rotation="-90 0 0"
+        width="10"
+        height="5"
+        color="#867d50"
+        scale="0.5 40 1"
+        shadow
+      ></a-plane>
+      <a-cone
+        position="16 39 -123.48"
+        color="#B20000"
+        scale="53 23 35"
+        rotation="0 0 0"
+      >
+      </a-cone>
+      <a-box
+        position="16.3 2.25 -123.48"
+        color="#f7dfc3"
+        scale="80 50 40"
+        rotation="0 0 0"
+      ></a-box>
+      <a-plane
+        position="0 0 -4"
+        rotation="-90 0 0"
+        width="400"
+        height="400"
+        color="#07572D"
+        shadow
+      ></a-plane>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="5.87737 -1 6.31966"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="-6.64912 -1 6.31966"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="-6.93418 -1 -27.31708"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="5.87737 -1 -27.60214"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="5.87737 -1 40.04541"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="-6.64912 -1 39.87352"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="-15.77109 -1 -27.31708"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="-15.23815 -1 6.31966"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="-14.89341 -1 39.87352"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="14.62827 -1 6.31966"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="14.60236 -1 40.04541"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="14.54628 -1 -27.60214"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="23.33421 -1 -27.60214"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="23.59742 -1 6.31966"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="-24.95946 -1 39.87352"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="45.26605 -1 -27.60214"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="45.44092 -1 40.04541"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="45.4625 -1 74.29587"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="33.56529 -1 40.04541"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="34.18323 -1 75.26879"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="24.43944 -1 75.58605"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="14.60236 -1 75.681"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="5.87737 -1 75.68838"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="-6.64912 -1 75.79494"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="-15.34751 -1 76.2362"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="-24.95946 -1 76.43749"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="-49.53756 -1 -27.31708"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="-48.39027 -1 39.87352"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="-49.14366 -1 6.31966"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="23.59742 -1 40.76128"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="33.06962 -1 -27.60214"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="33.30451 -1 6.31966"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="45.55311 -1 6.31966"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="-24.4687 -1 6.31966"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="-24.79126 -1 -27.31708"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="-32.73568 -1 39.87352"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="-40.37463 -1 39.87352"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="-40.48725 -1 6.31966"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="-49.54698 -1 39.87352"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="-49.1464 -1 76.43749"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="-49.53756 -1 -27.31708"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="-40.53916 -1 -27.31708"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="-32.73568 -1 -28.01832"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="-41.23631 -1 76.43749"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="-64.30326 -1 -27.31708"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="-32.2375 -1 75.89066"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="-32.67989 -1 6.31966"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="-64.35504 -1 6.31966"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+      <a-entity
+        gltf-model="#soil"
+        shadow=""
+        position="-63.85742 -1 39.87352"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="43.47515 -9.31933 74.29587"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="https://cdn.glitch.com/ef098137-9649-4df6-9d35-b5ecdc26a827%2FPROJECT-2-soil.gltf?v=1604280505038"
+        shadow=""
+        position="34.18323 -2.35848 75.26879"
+        rotation=""
+        scale="0.5 0.5 0.5"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="22.82489 -11.08225 75.58605"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to:22.82489 -3.08225 75.58605;dur: 10000; easing: linear;dir: alternate; loop:true;"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="4.14415 -9.69625 75.68838"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to:4.14415 -1.69625 75.68838;dur: 10000; easing: linear;dir: alternate; loop:true;"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="4.01014 -9.93439 37.9981"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to:4.01014 -1.93439 37.9981;dur: 10000; easing: linear;dir: alternate; loop:true;"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="22.01881 -9.42973 40.76128"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to:22.01881 -1.42973 40.76128;dur: 10000; easing: linear;dir: alternate; loop:true;"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="31.98034 -8.22525 40.04541"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to:31.98034 -2.22525 40.04541;dur: 10000; easing: linear;dir: alternate; loop:true;"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="43.42624 -9.36899 40.04541"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to:43.42624 0.36899 40.04541;dur: 10000; easing: linear;dir: alternate; loop:true;"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="4.14465 -10.00104 6.31966"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to:4.14465 -2.00104 6.31966;dur: 10000; easing: linear;dir: alternate; loop:true;"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="22.12312 -9.62248 6.31966"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to:22.12312 -1.62248 6.31966;dur: 10000; easing: linear;dir: alternate; loop:true;"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="31.53826 -9.53911 6.31966"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to:31.53826 -1.53911 6.31966;dur: 10000; easing: linear;dir: alternate; loop:true;"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="43.45092 -9.48308 6.31966"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to:43.45092 -1.48308 6.31966;dur: 10000; easing: linear;dir: alternate; loop:true;"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="43.1379 -9.90067 -27.60214"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to:43.1379 -1.90067 -27.60214;dur: 10000; easing: linear;dir: alternate; loop:true;"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="32.13371 -9.58352 -27.60214"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to:32.13371 -1.58352 -27.60214;dur: 10000; easing: linear;dir: alternate; loop:true;"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="21.11447 -10.55877 -26.46074"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to:21.11447 -2.55877 -26.46074;dur: 10000; easing: linear;dir: alternate; loop:true;"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="12.2006 -9.79806 -27.60214"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to:12.2006 -1.79806 -27.60214;dur: 10000; easing: linear;dir: alternate; loop:true;"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="32.63514 -9.31933 74.29587"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to:32.63514 -2.31933 74.29587;dur: 10000; easing: linear;dir: alternate; loop:true;"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="-8.12468 -9.31933 74.29587"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to:-8.12468 -2.31933 74.29587;dur: 10000; easing: linear;dir: alternate; loop:true;"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="-34.57736 -7.85042 6.31966"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to:-34.57736 0.85042 6.31966;dur: 10000; easing: linear;dir: alternate; loop:true;"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="12.98077 -8.88577 40.14749"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to: 12.98077 -1.88577 40.14749; dur: 10000; easing: linear; dir: alternate; loop: true"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="12.98077 -8.88577 5.6594"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to: 12.98077 -1.88577 5.6594; dur: 10000; easing: linear; dir: alternate; loop: true"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="12.98077 -8.88577 74.37496"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to: 12.98077 -1.88577 74.37496; dur: 10000; easing: linear; dir: alternate; loop: true"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="-8.93056 -8.88577 -27.88936"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to: -8.93056 -1.88577 -27.88936; dur: 10000; easing: linear; dir: alternate; loop: true"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="-6.64912 -8 39.87352"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to: -6.64912 -1 39.87352; dur: 10000; easing: linear; dir: alternate; loop: true"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="-17.21662 -9.31933 74.29587"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to: -17.21662 -2.31933 74.29587; dur: 10000; easing: linear; dir: alternate; loop: true"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="-26.88557 -9.31933 74.29587"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to: -26.88557 -2.31933 74.29587; dur: 10000; easing: linear; dir: alternate; loop: true"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="-34.16552 -9.31933 74.29587"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to: -34.16552 -2.31933 74.29587; dur: 10000; easing: linear; dir: alternate; loop: true"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="-43.17372 -9.31933 74.29587"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to: -43.17372 -2.31933 74.2958; dur: 10000; easing: linear; dir: alternate; loop: true"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="-50.97272 -9.31933 74.29587"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to: -50.97272 -2.31933 74.29587; dur: 10000; easing: linear; dir: alternate; loop: true"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="-16.56412 -8.5647 39.11539"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to: -16.56412 -1.5647 39.11539; dur: 10000; easing: linear; dir: alternate; loop: true"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="-26.70092 -8.5647 39.11539"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to: -26.70092 -1.5647 39.11539; dur: 10000; easing: linear; dir: alternate; loop: true"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="-34.51514 -8.5647 39.11539"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to: -34.51514 -1.5647 39.11539; dur: 10000; easing: linear; dir: alternate; loop: true"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="-42.30627 -8.5647 39.11539"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to: -42.30627 -1.5647 39.11539; dur: 10000; easing: linear; dir: alternate; loop: true"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="-50.83573 -8.5647 39.11539"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to: -50.83573 -1.5647 39.11539; dur: 10000; easing: linear; dir: alternate; loop: true"
+      ></a-entity>
+
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="-26.50362 -8.5647 4.89695"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to: -26.50362 -1.5647 4.89695; dur: 10000; easing: linear; dir: alternate; loop: true"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="-17.18 -8.5647 4.89695"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to: -17.18 -1.5647 4.89695; dur: 10000; easing: linear; dir: alternate; loop: true"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="-8.42966 -8.5647 4.89695"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to: -8.42966 -1.5647 4.89695; dur: 10000; easing: linear; dir: alternate; loop: true"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="-42.23232 -8.5647 4.89695"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to: -42.23232 -1.5647 4.89695; dur: 10000; easing: linear; dir: alternate; loop: true"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="-50.36374 -8.5647 4.89695"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to: -50.36374 -1.5647 4.89695; dur: 10000; easing: linear; dir: alternate; loop: true"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="-41.46217 -8.5647 -28.48969"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to: -41.46217 -1.5647 -28.48969; dur: 10000; easing: linear; dir: alternate; loop: true"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="-34.04786 -8.5647 -28.48969"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to: -34.04786 -1.5647 -28.48969; dur: 10000; easing: linear; dir: alternate; loop: true"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="-26.55669 -8.5647 -28.48969"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to: -26.55669 -1.5647; dur: 10000; easing: linear; dir: alternate; loop: true"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="-17.25686 -8.5647 -28.48969"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to: -17.25686 -1.5647 -28.48969; dur: 10000; easing: linear; dir: alternate; loop: true"
+      ></a-entity>
+      <a-entity
+        gltf-model="#plant"
+        shadow=""
+        position="4.14465 -8.5822 -28.9218"
+        rotation=""
+        scale="0.5 0.5 0.5"
+        animation="property: position; to: 4.14465 -1.5822 -28.9218; dur: 10000; easing: linear; dir: alternate; loop: true"
+      ></a-entity>
+    </a-scene>
+  </body>
+</html>
